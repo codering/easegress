@@ -50,16 +50,16 @@ archives:
 
 release:
   github:
-    owner: megaease
+    owner: codering
     name: easegress
   name_template: "{{ .ProjectName }}-v{{ .Version }}"
 
 dockers:
   - image_templates:
-    - codering/easegress:latest
-    - codering/easegress:{{ .Tag }}
-    - codering/easegress:easemesh
-    - codering/easegress:server-sidecar
+    - cloudbean/easegress:latest
+    - cloudbean/easegress:{{ .Tag }}
+    - cloudbean/easegress:easemesh
+    - cloudbean/easegress:server-sidecar
 
     goos: linux
     goarch: amd64
