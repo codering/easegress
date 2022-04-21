@@ -13,10 +13,10 @@ GO_PATH := $(shell go env | grep GOPATH | awk -F '"' '{print $$2}')
 HTTPSERVER_TEST_PATH := build/test
 
 # Image Name
-IMAGE_NAME?=megaease/easegress
+IMAGE_NAME?=cloudbean/easegress
 
 # Version
-RELEASE?=v1.5.1
+RELEASE?=v1.5.2
 
 # Git Related
 GIT_REPO_INFO=$(shell cd ${MKFILE_DIR} && git config --get remote.origin.url)
