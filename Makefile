@@ -132,3 +132,6 @@ vendor_clean:
 
 mod_update:
 	cd ${MKFILE_DIR} && go get -u
+
+sync_upstream:
+	git rebase upstream/main
